@@ -1,0 +1,142 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: hsl(172, 32%, 27%);
+    color: #333;
+}
+
+.top-nav {
+    background-color: #04040c;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.top-nav a {
+    color: #1b3c5a;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.2rem;
+}
+
+.top-nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+
+    
+        font-family: "Arsenal SC", sans-serif;
+        font-weight: 450;
+        font-style: normal;
+    margin: 0;
+    padding: 20px 0;
+    font-size: 2.5rem;
+}
+
+.footer-icons {
+   
+    display: flex;
+    justify-content: center;
+    gap: 1cm;
+    
+margin-bottom: 10px;
+ }
+
+.footer-icons img {
+
+    width: 30px; /* Ajuste o tamanho do ícone conforme necessário */
+    height: 30px; /* Ajuste o tamanho do ícone conforme necessário */
+}
+
+.left-column, .right-column {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+}
+
+.left-column {
+    order: 1; /* Ordem 1 para colocar à esquerda */
+}
+
+.right-column {
+    order: 2; /* Ordem 2 para colocar à direita */
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-links {
+    padding: 20px;
+    background-color: rgba(40, 58, 59, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px; /* Espaço entre a seção de links e o vídeo */
+}
+
+.sidebar-links h2 {
+    margin-top: 0;
+}
+
+.navigation {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Cria um layout de grid com 3 colunas */
+    gap: 10px; /* Espaçamento entre os links */
+}
+
+.navigation a {
+    display: block;
+    width: 100%; /* Ocupa toda a largura da célula do grid */
+    height: 100px; /* Altura dos blocos de link */
+    background-color: #ccc; /* Cor de fundo de cada bloco */
+    background-size: cover; /* Ajuste para cobrir todo o espaço do bloco */
+    background-position: center;
+    border-radius: 8px; /* Borda arredondada */
+    transition: transform 0.3s ease; /* Transição suave no hover */
+}
+
+.navigation a:hover {
+    transform: scale(1.1); /* Efeito de escala ao passar o mouse */
+}
+
+.video {
+    padding: 20px;
+    background-color: rgba(40, 58, 59, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px; /* Espaço abaixo da seção de links */
+}
+
+.video h2 {
+    margin-top: 0;
+}
+
+@media (max-width: 768px) {
+    .left-column, .right-column {
+        width: 100%;
+    }
+
+    .navigation {
+        grid-template-columns: repeat(2, 1fr); /* Altera para 2 colunas em telas menores */
+    }
+}
